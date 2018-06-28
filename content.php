@@ -5,28 +5,32 @@
 <div class="row">
     
 
-<div class="col-md">
+<div class="col-md col-lg-8">
     <!-- marketing slogan -->
-    <div class='p-5 mb-3'>
-    <h3>We make solid minimalist design websites and custom Laravel applications</h3>  
+    <div class='p-5 mb-3 bg-info mt-4 text-white'>
+    <h3>We make minimalist website designs and custom online applications</h3>  
     </div>
 
     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
+      <ol class="carousel-indicators ">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+        <div class="carousel-item active ">
+          <img class="d-block w-100" src="img/colorme_square.png" alt="First slide">
+        </div>
+        <div class="carousel-item bg-info">
+          <img class="d-block w-100 bg-info" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+          <img class="d-block w-100" src="img/charts.png" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+          <img class="d-block w-100" src="img/syslog.png" alt="Third slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -41,30 +45,32 @@
 </div>
 
     <!-- faces -->
-    <div class="col-md">
+    <div class="col-md col-lg-4 my-4 pb-4 bg-info text-white">
+    <h3 class="p-2 border-bottom">Our team</h3>
+    
         <div class="media col-sm mb-3">
           <img class="align-self-center mr-2  rounded" src="img/danvop_founder.jpg" alt="Danila Popov photo">
             <div class="media-body my-auto">
                 <h5 class="mt-0">Danila Popov</h5>
-                <p class="text-black-50">Founder and CEO</p>
-                <p class="text-black-50"><i>Moscow, Russia</i></p>
+                <p>Founder and CEO</p>
+                <p><i>Moscow, Russia</i></p>
             </div>
         </div>
         <div class="media col-sm mb-3">
           <img class="align-self-center mr-2  rounded" src="img/omar kumar_v2.jpg" alt="Omar Kumar photo">
           <div class="media-body my-auto">
             <h5 class="mt-0 strong">Omar Kumar</h5>
-            <p class="text-black-50">BackEnd developer</p>
-            <p class="text-black-50"><i>Delhi, India</i></p>
+            <p>BackEnd developer</p>
+            <p><i>Delhi, India</i></p>
           </div>
         </div>
         
-        <div class="media col-sm">
+        <div class="media col-sm mb-3">
           <img class="align-self-center mr-2  rounded" src="img/rulon aboev_v2.jpg" alt="Rulon Aboev photo">
           <div class="media-body my-auto">
             <h5 class="mt-0">Rulon Aboev</h5>
-            <p class="text-black-50">Art and Design</p>
-            <p class="text-black-50"><i>Antwerp, Belgium</i></p>
+            <p>Art and Design</p>
+            <p><i>Antwerp, Belgium</i></p>
 
           </div>
         </div>
