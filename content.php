@@ -2,50 +2,63 @@
   <a class="navbar-brand" href="#">Danvop development team</a>
 </nav>
 
-<div class="row">
     
+        
+       <!--   -->
 
-<div class="col-md col-lg-8">
+        <!-- Carousel -->
+         <!-- Slideshow container -->
+        
+        
+<div class="container-fluid">
+<div class="row">
+
     <!-- marketing slogan -->
-    <div class='p-5 mb-3 bg-info mt-4 text-white'>
-    <h3>We make minimalist website designs and custom online applications</h3>  
+    <div class='col col-md-6 col-lg-8 my-3'>
+        <h3 class='p-4 bg-info text-white'>We make minimalist website designs and custom online applications</h3>
+
+     <!--    <div class='p-4 bg-info text-white'>
+        <img class="img-fluid" src="img/syslog.png">
+        </div> -->
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/syslog.png" style="width:100%">
+        <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="img/syslog.png" style="width:100%">
+        <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="img/syslog.png" style="width:100%">
+        <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
     </div>
 
     <!-- Carousel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators ">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active ">
-          <img class="d-block w-100" src="img/colorme_square.png" alt="First slide">
-        </div>
-        <div class="carousel-item bg-info">
-          <img class="d-block w-100 bg-info" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/charts.png" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="img/syslog.png" alt="Third slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-</div>
+    
 
     <!-- faces -->
-    <div class="col-md col-lg-4 my-4 pb-4 bg-info text-white">
+    <div class="col col-md-6 col-lg-4 my-3 pb-4 bg-info text-white">
     <h3 class="p-2 border-bottom">Our team</h3>
     
         <div class="media col-sm mb-3">
@@ -77,7 +90,8 @@
 
     </div>    
 
-</div>
+</div> <!-- row -->
+</div> <!-- Container -->
 
 
 
@@ -85,4 +99,32 @@
 <a class="text-white align-middle" href="#"><i class="fab fa-twitter" style="font-size:30px"></i></a>
 <a class="text-white align-middle" href="#"><i class="fab fa-github" style="font-size:30px"></i></a>
 </footer>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 
