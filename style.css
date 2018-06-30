@@ -98,6 +98,11 @@ body {
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
+
+}
+/*bootstrap adapt fade*/
+.fade:not(.show) {
+    opacity: 1;
 }
 
 @-webkit-keyframes fade {
