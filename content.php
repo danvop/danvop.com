@@ -59,7 +59,7 @@
     <h3 class="p-2 border-bottom">Our team</h3>
     
         <div class="media mb-3">
-          <img class="align-self-center mr-2 w-50 rounded" src="img/danvop_founder.jpg" alt="Danila Popov photo">
+          <img class="align-self-center mr-2 w-50 rounded" src="img/danvop_founder_100.png" alt="Danila Popov photo">
             <div class="media-body my-auto w-50">
                 <h5 class="mt-0">Danila Popov</h5>
                 <p>Founder and CEO</p>
