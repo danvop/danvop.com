@@ -59,16 +59,16 @@
     <h3 class="p-2 border-bottom">Our team</h3>
     
         <div class="media mb-3">
-          <img class="align-self-center mr-2 w-50 rounded" src="img/danvop_founder_100.png" alt="Danila Popov photo">
-            <div class="media-body my-auto w-50">
+          <img class="align-self-center mr-2 rounded" src="img/danvop_founder_100.png" alt="Danila Popov photo">
+            <div class="media-body my-auto">
                 <h5 class="mt-0">Danila Popov</h5>
                 <p>Founder and CEO</p>
                 <p><i>Moscow, Russia</i></p>
             </div>
         </div>
         <div class="media mb-3">
-          <img class="align-self-center mr-2 rounded w-50" src="img/omar kumar_v2.jpg" alt="Omar Kumar photo">
-          <div class="media-body my-auto w-50">
+          <img class="align-self-center mr-2 rounded" src="img/omar kumar_v2.jpg" alt="Omar Kumar photo">
+          <div class="media-body my-auto">
             <h5 class="mt-0 strong">Omar Kumar</h5>
             <p>BackEnd developer</p>
             <p><i>Delhi, India</i></p>
@@ -76,8 +76,8 @@
         </div>
         
         <div class="media mb-3">
-          <img class="align-self-center mr-2  rounded w-50" src="img/rulon aboev_v2.jpg" alt="Rulon Aboev photo">
-          <div class="media-body my-auto w-50">
+          <img class="align-self-center mr-2  rounded" src="img/rulon aboev_v2.jpg" alt="Rulon Aboev photo">
+          <div class="media-body my-auto">
             <h5 class="mt-0">Rulon Aboev</h5>
             <p>Art and Design</p>
             <p><i>Antwerp, Belgium</i></p>
