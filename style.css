@@ -1,0 +1,123 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+/*aside {
+  padding: 0 10px;
+}*/
+.container {
+  display: flex;
+  min-height: 100%;
+  max-width: 1400px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header, footer, aside {
+  background: #17a2b8;
+  color: white;
+}
+hr {
+  color: white;
+}
+aside {
+  padding: 10px 10px;
+  margin: 10px 0;
+}
+footer {
+  text-align: center;
+  font-size: 2em;
+  line-height: 2em;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover{
+  color: black;
+}
+
+.container > * {
+  padding: 0 20px;
+
+}
+
+.about-brand {
+  margin: 10px 0;
+  background: #17a2b8;
+  color: white;
+  padding: 20px;
+}
+
+/* Media container starts*/
+.media {
+  display: flex;
+}
+.media-img {
+  margin-right: 10px;
+}
+.media-img img{
+  max-width: 120px;
+  border-radius: 5px;
+}
+
+.media-content h3 {
+  margin-top: 0;
+}
+/* Media container ends*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+  
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 767px) {
+  
+  .media-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .media {
+    flex-direction: column;
+  }
+  
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media screen and (min-width: 992px) {
+  
+  .content-container {
+    display: flex;
+  }
+  .about-brand {
+    height: 250px;
+    padding: 50px;
+  }
+  main {
+    margin-right: 20px;
+  }
+  .media {
+    flex-direction: row;
+  }
+  .media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  aside {
+    flex:1;
+  }
+
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) {
+  
+}
+
