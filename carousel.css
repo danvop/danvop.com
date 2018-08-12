@@ -36,12 +36,14 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+
 }
 .slide-navs a{
   font-size: 1.5em;
   cursor: pointer;
   flex: 2;
   background: #cecece;
+  padding: 10px 0;
   text-align: center;
   user-select: none;
   -moz-user-select: none;
