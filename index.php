@@ -7,16 +7,17 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
 
-    <title>Web development</title>
+    <title>Web development team</title>
   </head>
-  <body class="bg-light">
+  <body>
     
-  <?php include 'content.php'?> 
+  <?php include 'content.php';?> 
     
   </body>
-  <?php include 'bs_scripts.php'?>
+  <script src="carousel.js"></script>
   
 </html>
