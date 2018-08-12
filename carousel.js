@@ -56,7 +56,14 @@ var slides = [
 
 ];
 
-
+var images = new Array();
+function preload() {
+  for (i = 0; i < slides.length; i++) {
+    images[i] = new Image()
+    images[i].src = slides[i].img;
+  }
+}
+preload();
 
 document.getElementById("danvopCarousel").innerHTML = 
   '<div id="carousel" class="slide">\
