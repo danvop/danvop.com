@@ -96,7 +96,7 @@ footer a:hover{
     display: flex;
   }
   .about-brand {
-    height: 250px;
+    min-height: 50px;
     padding: 50px;
   }
   main {
