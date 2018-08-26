@@ -57,12 +57,7 @@ var slides = [
 ];
 
 var images = new Array();
-function preload() {
-  for (i = 0; i < slides.length; i++) {
-    images[i] = new Image()
-    images[i].src = slides[i].img;
-  }
-}
+
 preload();
 
 document.getElementById("danvopCarousel").innerHTML = 
@@ -74,8 +69,6 @@ document.getElementById("danvopCarousel").innerHTML =
     <h4 id="slideHeader"></h4>\
     <div id="slideContent"></div>\
     <div class="slide-navs">\
-      <a class="prev" onclick="plusSlides(-1)">&#8920;</a>\
-      <a class="next" onclick="plusSlides(1)">&#8921;</a>\
     </div>\
    </div>\
   </div>';
@@ -84,7 +77,27 @@ document.getElementById("danvopCarousel").innerHTML =
 
 var slideIndex = 0;
 var slidesTimeout;
+
+addDots();
 showSlides();
+
+function preload() {
+  for (i = 0; i < slides.length; i++) {
+    images[i] = new Image()
+    images[i].src = slides[i].img;
+  }
+}
+
+function addDots(){
+  var dots = [];
+  for (var i = 0; i < slides.length; i++) {
+    dots[i] = document.createElement("span");
+    dots[i].className = "dot";
+    dots[i].setAttribute("onclick", "currentSlide(" + i + ")");
+    document.querySelector(".slide-navs").appendChild(dots[i]);
+    delete dot;
+  }
+}
 
 function showSlides() {
     var carousel = document.getElementById("carousel");
@@ -92,6 +105,7 @@ function showSlides() {
     var slideHeader = document.getElementById("slideHeader");
     var slideContent = document.getElementById("slideContent");
     var slide;
+    var dots = document.getElementsByClassName("dot");
   
     
     if (slideIndex >= slides.length) {slideIndex = 0;}
@@ -106,19 +120,25 @@ function showSlides() {
     slideImg.src = slide.img;
     slideHeader.innerHTML = slide.header;
     slideContent.innerHTML = slide.content;
+
+    //highlight dots
+    for (var i = 0; i < dots.length; i++) {
+      //replace class active to ""
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[slideIndex].className += " active";
   
     slideIndex++;
     
     slidesTimeout = setTimeout(showSlides, 5000); // Change image every 2 seconds
     
 }
-function plusSlides(num) {
-    if(num === -1) {
-      slideIndex-=2;
-    }
-    clearTimeout(slidesTimeout);    
-    showSlides();
-    
+
+function currentSlide(n) {
+  console.log('test ' + n);
+  slideIndex = n;
+  clearTimeout(slidesTimeout);
+  showSlides();
 }
 
 function fadeInCust(elem) {
