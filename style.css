@@ -6,9 +6,7 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
-/*aside {
-  padding: 0 10px;
-}*/
+
 .container {
   display: flex;
   min-height: 100%;

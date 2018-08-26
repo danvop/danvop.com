@@ -28,10 +28,6 @@
   text-decoration: underline;
 }
 
-.slide-content .slide-navs {
-  /* margin-top: auto; */
-}
-
 .slide-navs {
   display: flex;
   justify-content: center;
