@@ -135,7 +135,6 @@ function showSlides() {
 }
 
 function currentSlide(n) {
-  console.log('test ' + n);
   slideIndex = n;
   clearTimeout(slidesTimeout);
   showSlides();

@@ -1,21 +1,30 @@
+<header>
+<div class="header-content"><h3>Danvop web development</h3></div>
+
+</header>
+
 <div class="container">
-  <header>
-    <h3>Danvop web development</h3>
-  </header>
-  <div class="content-container">
+  
+
+
+
   <main>
+  <div class="content-container">
+
     <div class="about-brand">
       <h2>We make minimalist website designs and custom online applications</h2>
     </div> 
-    <!-- carousel section -->
+  </div>
+  <div class="content-container">
     <h3>Our projects</h3>
     <hr>
+    <!-- carousel section -->
     <div id="danvopCarousel"></div>
-        
-    
-  </main>
-  <aside>
-      <h3>Our team</h3>
+  </div>
+
+
+  <div class="content-container">
+  <h3>Our team</h3>
       <hr>
       <div class="media-container">
       <div class="media">
@@ -49,12 +58,25 @@
         </div>
       </div>
       </div>
-    </aside>
-    </div>
-  <footer>
+  </div>
+  <div class="content-container">
+  
     
-    <a class="" href="https://twitter.com/danilaapopov" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a class="" href="https://github.com/danvop" target="_blank"><i class="fab fa-github"></i></a>
     
-  </footer>
+
+    
+        
+    <!-- Team section -->
+    
+  </div>
+  </main>
+  
+  
 </div>
+
+<footer>
+  
+  <a class="" href="https://twitter.com/danilaapopov" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a class="" href="https://github.com/danvop" target="_blank"><i class="fab fa-github"></i></a>
+  
+</footer>
