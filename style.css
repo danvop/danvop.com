@@ -75,6 +75,11 @@ footer a:hover{
 .media-content h3 {
   margin-top: 0;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
 /* Media container ends*/
 
 /* Small devices (landscape phones, 576px and up) */

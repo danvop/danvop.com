@@ -61,7 +61,13 @@
   </div>
   <div class="content-container">
   
+  <form class="contact-form" method="post" action="contact-add.php">
+  <input type="text" name="name">
+  <input type="text" name="email">
+  <textarea name="description" cols="30" rows="10"></textarea>
+  <input type="submit">
     
+  </form>  
     
 
     
